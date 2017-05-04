@@ -1,4 +1,3 @@
-<center>
 # polardash
 Bring back the gifts and save Christmas! A game built with SpiderGL.
 
@@ -12,4 +11,4 @@ Keep yourself safe inside the tunnels.
 
 When all the gifts are collected, bring them back to Santa to save Christmas!
 ![santa](https://raw.githubusercontent.com/thuynganvu/polardash/master/helper/santa.png)
-</center>
+
