@@ -1,0 +1,53 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Drawings</title>
+
+<script type="text/javascript" src="../../lib/spidergl.js"></script>
+<script type="text/javascript" src="../../lib/spidergl-config.js"></script>
+<script type="text/javascript" src="trackball.js"></script>
+<script type="text/javascript" src="primitives.js"></script>
+<script type="text/javascript" src="init_drawings.js"></script>
+<script type="text/javascript" src="drawings.js"></script>
+ <script type="text/javascript">
+ 
+// OpenGL rendering context
+var gl = null;
+
+
+function draw() {
+	drawScene(gl);
+}
+
+function start() {
+
+	var canvas = document.getElementById("canvas");
+
+	// Initialize the OpenGL rendering context
+	gl = canvas.getContext("experimental-webgl");
+	
+	document.onmousedown =  mousedown;
+	document.onmouseup =  mouseup;
+	document.onmousemove =  mousemove;
+	   
+	// Only continue if WebGL is available and working
+	if (gl)  {
+		initialize(gl);
+		init(gl);
+		setInterval(draw, 20);	
+	}
+	else {
+		alert("WebGL initialization failed! Your browser does not support WebGL or it is not properly configured.");	
+	}		
+}
+</script>
+
+</head>
+<body onload="start()"> 
+	<center>
+	<canvas id="canvas" width="600" height="600">
+		If you are seeing this message your web browser does not support the HTML5 &lt;canvas>&gt; element.
+	</canvas>
+	</center>
+</body>
+</html>

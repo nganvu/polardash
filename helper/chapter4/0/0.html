@@ -1,0 +1,54 @@
+<html>
+	<head>
+		<title>Our First 3D Client</title>
+        <link rel="stylesheet" href="../../style.css">
+        <script type="text/javascript" src="../../lib/spidergl.js"></script>
+		<script type="text/javascript" src="../../lib/spidergl-config.js"></script>
+		<script type="text/javascript" src="../../lib/nvmc.js"></script>
+		<script type="text/javascript" src="../../lib/nvmc-config.js"></script>
+		<script type="text/javascript" src="../../chapter3/cube.js"></script>
+		<script type="text/javascript" src="../../chapter3/cone.js"></script>
+		<script type="text/javascript" src="../../chapter3/cylinder.js"></script>
+		<script type="text/javascript" src="../../chapter3/torus.js"></script>
+		<script type="text/javascript" src="../../chapter3/sphere_subd.js"></script>
+		<script type="text/javascript" src="track.js"></script>
+		<script type="text/javascript" src="quadrilateral.js"></script>
+		<script type="text/javascript" src="shaders.js"></script>
+		<script type="text/javascript" src="building.js"></script>
+		<script type="text/javascript" src="0.js"></script>
+		<script type="text/javascript" src="race.js"></script>
+		<script type="text/javascript" src="../../lib/nvmc-glue.js"></script>
+	</head>
+	<body>
+    <ul class="combar">
+        <li>Instructions</li>
+        <li>[w]: move forward<br>
+            [s]: move backward<br>
+            [a]: steer left<br>
+            [d]: steer right<br></li>
+    </ul>
+    <ul class="navbar">
+        <li>Section 4.10.1, page 128</li>
+        <li> This is already a 3D client but we are looking at the race with an orthogonal projection from above </li>
+    </ul>
+		<center>
+			<h2> Our First 3D Client</h2>
+			<div>
+			  <hr/>
+			  <canvas id="nvmc-canvas" width="600" height="400" style="border:1px solid gray;"></canvas>
+			  <hr/>
+			</div>
+			<div>
+			  <h3>Log</h3>
+			  <textarea id="nvmc-log" rows="4" cols="80"></textarea>
+			</div>
+			<div>
+			  <div id="nvmc-fps">FPS</div>
+			  <div id="nvmc-latency">Latency</div>
+			  <div id="nvmc-server-clock-delta">Server Clock Delta</div>
+			  <div id="nvmc-server-time">Server Time</div>
+			</div>
+			<hr/>
+		</center>
+	</body>
+</html>

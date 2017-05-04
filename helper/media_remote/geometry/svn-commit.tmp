@@ -1,0 +1,6 @@
+
+--This line, and those below, will be ignored--
+
+AM   tree/tree-body-only.obj
+AM   tree/tree-leaves-only.obj
+AM   tree/tree-leaves-only.obj.mtl

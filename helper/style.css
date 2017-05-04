@@ -1,0 +1,113 @@
+body {
+    font-family: Georgia, "Times New Roman",
+    Times, serif;
+    color: #3333aa;
+    background-color: #ffffff ;
+    width: 40em;}
+ul.combar {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 4em;
+    left: 60em;
+    width: 15em }
+ul.combar li {
+    background: white;
+    margin: 0.5em 0;
+    padding: 0.6em;
+}
+
+ul.instructions {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 15%;
+    left: 25%;
+    width: 50% }
+
+ul.countdown {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 55%;
+    left: 25%;
+    width: 50% }
+
+ul.navbar_left {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    bottom: 2em;
+    left: 1em;
+    width: 15em }
+
+ul.navbar_right {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    bottom: 2em;
+    right: 2em;
+    width: 15em }
+
+ul.restart {
+    list-style-type: none;
+    position: absolute;
+    top: 1em;
+    left: 0; }
+
+button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: Avenir;
+}
+
+h1 {
+    font-family: Helvetica, Geneva, Arial,
+    SunSans-Regular, sans-serif }
+
+ul.navbar li {
+    background: white;
+    margin: 0.5em 0;
+    padding: 0.6em;
+}
+ul.navbar a {
+    text-decoration: none }
+a:link {
+    color: blue }
+a:visited {
+    color: purple }
+address {
+    margin-top: 1em;
+    padding-top: 1em;
+    border-top: thin dotted }
+
+textarea {
+    resize: none;
+    text-align: center;
+    color: white;
+    font-size: 3em;
+    font-family: 'Avenir';
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+}
+
+ul.instructions textarea {
+    font-size: 2em;
+}
+
+ul.countdown textarea {
+    font-size: 5em;
+}
+
+canvas { background:url(screen.png) }
+

@@ -1,0 +1,55 @@
+<html>
+	<head>
+		<title>POLARDASH</title>
+        <link rel="stylesheet" href="helper/style.css">
+        <script type="text/javascript" src="helper/lib/spidergl.js"></script>
+		<script type="text/javascript" src="helper/lib/spidergl-config.js"></script>
+		<script type="text/javascript" src="helper/lib/nvmc.js"></script>
+		<script type="text/javascript" src="helper/lib/nvmc-config.js"></script>
+		<script type="text/javascript" src="helper/chapter3/cube.js"></script>
+		<script type="text/javascript" src="helper/chapter3/cone.js"></script>
+		<script type="text/javascript" src="helper/chapter3/cylinder.js"></script>
+		<script type="text/javascript" src="helper/chapter3/torus.js"></script>
+		<script type="text/javascript" src="helper/chapter3/sphere_subd.js"></script>
+		<script type="text/javascript" src="helper/chapter4/0/track.js"></script>
+		<script type="text/javascript" src="helper/chapter4/0/quadrilateral.js"></script>
+		<script type="text/javascript" src="helper/chapter4/0/race.js"></script>
+		<script type="text/javascript" src="helper/chapter4/0/building.js"></script>
+		<script type="text/javascript" src="helper/chapter4/0/tunnel.js"></script>
+		<script type="text/javascript" src="helper/chapter4/0/0.js"></script>
+		<script type="text/javascript" src="helper/chapter4/1/1.js"></script>
+		<script type="text/javascript" src="helper/chapter4/0/shaders.js"></script>
+		<script type="text/javascript" src="helper/lib/nvmc-glue.js"></script>
+	</head>
+	<body>
+		<center>
+			  <canvas id="nvmc-canvas" width="1420" height="800" style="border:1px solid gray;"
+			  	background="screen.png"></canvas>
+			  <div>
+			  	<ul class="restart">
+						<button id="restart" onclick="location.reload();" style="display: none">RESTART</button>
+					</ul>
+			  	<ul class="instructions">
+						<textarea id="nvmc-instructions" rows="8" cols="35" readonly="readonly"></textarea>
+					</ul>
+					<ul class="countdown">
+						<textarea id="nvmc-countdown" rows="2" cols="15" readonly="readonly"></textarea>
+					</ul>
+			  	<ul class="navbar_left">
+						<textarea id="nvmc-logtime" rows="3" cols="10" readonly="readonly"></textarea>
+					</ul>
+					<ul class="navbar_right">
+						<textarea id="nvmc-logpoint" rows="3" cols="10" readonly="readonly"></textarea>
+					</ul>
+					<div style="display: none">
+						<textarea id="nvmc-log"></textarea>
+					</div>
+				</div>
+		</center>
+		<div style="display: none">
+			<audio controls autoplay>
+			  <source src="helper/background.mp3" type="audio/mpeg">
+			</audio>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,49 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Primitives - Cylinder Example</title>
+ 
+<script type="text/javascript" src="../lib/spidergl.js"></script>
+<script type="text/javascript" src="../lib/spidergl-config.js"></script>
+<script type="text/javascript" src="primitives.js"></script>
+<script type="text/javascript" src="renderingprimitives.js"></script>
+ 
+ <script type="text/javascript">
+ 
+// OpenGL rendering context
+var gl = null;
+
+// primitive to render
+var primitive = new Cylinder(30);
+
+function draw() {
+	drawThePrimitive(gl, primitive);
+}
+
+function start() {
+
+	var canvas = document.getElementById("canvas");
+
+	// Initialize the OpenGL rendering context
+	gl = canvas.getContext("experimental-webgl");
+	   
+	// Only continue if WebGL is available and working
+	if (gl)  {
+		initialize(gl, primitive);
+		setInterval(draw, 20);	
+	}
+	else {
+		alert("WebGL initialization failed! Your browser does not support WebGL or it is not properly configured.");	
+	}		
+}
+</script>
+
+</head>
+<body onload="start()"> 
+	<center>
+	<canvas id="canvas" width="600" height="400">
+		If you are seeing this message your web browser does not support the HTML5 &lt;canvas>&gt; element.
+	</canvas>
+	</center>
+</body>
+</html>

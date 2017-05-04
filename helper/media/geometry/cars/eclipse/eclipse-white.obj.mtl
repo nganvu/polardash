@@ -1,0 +1,53 @@
+#
+# Wavefront material file
+# Converted by Meshlab Group
+#
+#ruote
+newmtl material_0
+Ka 0.000000 0.000000 0.000000
+Kd 0.2 0.2 0.2
+Ks 0.05 0.05 0.05
+Tr 1.000000
+illum 2
+Ns 1.000000
+#freni
+newmtl material_1
+Ka 0.200000 0.200000 0.200000
+Kd 0.629412 0.629412 0.629412
+Ks 0.200000 0.100000 0.100000
+Tr 1.000000
+illum 2
+Ns 1.000000
+#carrozzeria
+newmtl material_2
+Ka 0.05  0.050 0.0500000
+Kd 1 1 1 
+Ks 0.3 0.3 0.3
+Tr 100.000000
+illum 2
+Ns 1.000000
+#rearlight
+newmtl material_3
+Ka 0.400000 0.100000 0.100000
+Kd 0.400000 0.105882 0.0
+Ks 0.150000 0.150000 0.150000
+Tr 100.000000
+illum 2
+Ns 1.000000
+#vetri
+newmtl material_4
+Ka 0.000000 0.000000 0.000000
+Kd 0.113725 0.113725 0.113725
+Ks 0.200000 0.250000 0.200000
+Tr 1.000000
+illum 2
+Ns 1.000000
+#headlight
+newmtl material_5
+Ka 0.20000 0.20000 0.100000
+Kd 0.500000 0.505882 0.0
+Ks 0.150000 0.150000 0.150000
+Tr 100.000000
+illum 2
+Ns 1.000000
+
