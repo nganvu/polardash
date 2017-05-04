@@ -130,12 +130,12 @@ NVMCClient.drawScene = function (gl) {
 	gl.viewport(0, 0, width, height);
 
 	// Clear the framebuffer
-	if (this.totalTime > 240 && this.totalTime <= 2040) {
-		var t = (this.totalTime - 240) / 1800;
+	if (this.totalTime > 240 && this.totalTime <= 2940) {
+		var t = (this.totalTime - 240) / 2700;
 		gl.clearColor(1 - 0.3*t, 0.9 + 0.1*t, 0.4 + 0.6*t, 1.0);
 	}
 	else if (this.totalTime > 2040) {
-		var t = (this.totalTime - 2040) / 1800;
+		var t = (this.totalTime - 2040) / 2700;
 		gl.clearColor(0.7 - 0.7*t, 1 - t, 1 - 0.5*t, 1.0);
 	}
 	else {
@@ -400,10 +400,12 @@ NVMCClient.onKeyDown = function (keyCode, event) {
 
 	if (keyCode == "A") {
 		this.leftTurn = true;
+		this.rightTurn = false;
 	}
 
 	if (keyCode == "D") {
 		this.rightTurn = true;
+		this.leftTurn = false;
 	}
 };
 
