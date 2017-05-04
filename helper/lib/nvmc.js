@@ -1748,14 +1748,14 @@ NVMC.logInstructions = function (msg) {
 	var textarea = document.getElementById("nvmc-instructions");
 	if (msg == true) {
 		textarea.style.display = "block";
-		textarea.innerHTML = "Use the [A] and [D] keys to skate.\n\n Collect the Presents and return them to Santa before Sundown.\n\n Watch out for Pesky Penguins! \n\n GET READY";
+		textarea.innerHTML = "Use the [A] and [D] keys to skate.\n\n Collect the Presents and return them to Santa before Sundown.\n\n Watch out for Pesky Penguins! \n\n GET READY!!! ᕦʕ •ᴥ•ʔᕤ";
 	}
 	else if (msg == false) {
 		textarea.style.display = "none";
 	}
 	else if (msg == "win") {
 		textarea.style.display = "block";
-		textarea.innerHTML = "YOU WON! :D"
+		textarea.innerHTML = "YOU WON!\n\\ʕ^ᴥ^ʔ/"
 		textarea.style.fontSize = "5em";
 		textarea.style.top = "25%";
     textarea.style.left = "25%";
@@ -1765,7 +1765,7 @@ NVMC.logInstructions = function (msg) {
 	}
 	else if (msg == "lose") {
 		textarea.style.display = "block";
-		textarea.innerHTML = "YOU LOSE! :("
+		textarea.innerHTML = "GAME OVER\nʕ>ᴥ<ʔ"
 		textarea.style.fontSize = "5em";
 		textarea.style.top = "25%";
     textarea.style.left = "25%";
