@@ -24,7 +24,7 @@
 	<body>
 		<center>
 			  <canvas id="nvmc-canvas" width="1420" height="800" style="border:1px solid gray;"
-			  	background="screen.png"></canvas>
+			  	background="screen.png" tabindex="1"></canvas>
 			  <div>
 			  	<ul class="restart">
 						<button id="restart" onclick="location.reload();" style="display: none">RESTART</button>
@@ -46,6 +46,9 @@
 					</div>
 				</div>
 		</center>
+		<script>
+			document.getElementById("nvmc-canvas").focus();
+		</script>
 		<div style="display: none">
 			<audio controls autoplay>
 			  <source src="helper/background.mp3" type="audio/mpeg">
