@@ -134,12 +134,9 @@ NVMCClient.drawScene = function (gl) {
 		var t = (this.totalTime - 240) / 2700;
 		gl.clearColor(1 - 0.3*t, 0.9 + 0.1*t, 0.4 + 0.6*t, 1.0);
 	}
-	else if (this.totalTime > 2040) {
-		var t = (this.totalTime - 2040) / 2700;
-		gl.clearColor(0.7 - 0.7*t, 1 - t, 1 - 0.5*t, 1.0);
-	}
 	else {
-		gl.clearColor(0, 0, 0.5, 1.0);
+		var t = (this.totalTime - 2940) / 2700;
+		gl.clearColor(0.7 - 0.7*t, 1 - t, 1 - 0.5*t, 1.0);
 	}
 	gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT);
 
